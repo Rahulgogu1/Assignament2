@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      div {
+        margin-left: 500px;
+        margin-top: 100px;
+        width: 600px;
+        margin: 30px;
+        border: 1px solid rgb(155, 45, 45);
+        background-color: white;
+        font-weight: 500;
+        box-shadow: 10px 10px #0003;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        border-top: 20px solid rgb(129, 110, 110);
+        border-bottom: 5px solid rgb(87, 84, 84);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Using Handle</h3>
+    <div>
+      <table border="2" width="600" cellspacing="1" cellpadding="6">
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+
+        {{#each Array}}
+        <tr>
+          <td>{{ this.Name }}</td>
+          <td>{{ this.City }}</td>
+          <td>{{ this.Country }}</td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+  </body>
+</html>
